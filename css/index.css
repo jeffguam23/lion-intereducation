@@ -12,8 +12,7 @@ body{
    width: 100%;
    height:100%;
    margin:0 auto;
-   
-   
+     
 }
 .redes a{
     color:#2E5F8D
@@ -22,7 +21,11 @@ body{
     display:none;
     
 }
-
+hr{
+        border: 0px;
+    margin: 0px;
+    padding: 1px;
+}
  #fondo{
     margin: 0 auto;
     background-color: #6b7777;
