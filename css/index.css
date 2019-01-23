@@ -42,12 +42,17 @@ nav {
 	display:grid;
 	align-items:center;
 }
+.menu-bt-admision{
+	display: flex
+}
 .menu li {
 	display:inline;
 	font-size:20px;
 }
 .menu {
 	margin-bottom:0rem;
+	display: flex;
+	align-items: center;
 }
 .menu li a:hover {
 	color:#41B7C4;
@@ -56,47 +61,40 @@ nav {
 	-o-transition:0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
-#nav-estable {
-	background:#333;
-	color:white;
-	height:80px;
-		width:100%;
-	/* hacemos que la cabecera ocupe el ancho completo de la página */
-	left:0;
-	/* Posicionamos la cabecera al lado izquierdo */
-	top:0;
-	/* Posicionamos la cabecera pegada arriba */
-	position:fixed;
-	/* Hacemos que la cabecera tenga una posición fija */
-}
 .content-servicios h2 {
-	font-size:3rem
+	font-size:3rem;
 }
 .content-servicios h3 {
 	font-size:2.5rem
 }
+.content-servicios{
+	position: absolute;
+}
 #fondo-azul {
-	background-color:#c7dade;
-	width:45%;
+	background-image: url(../img/estudiantes.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+	width:40%;
 	color:#00305B;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	height:444px;
+	height: 441px;
+    margin-top: 3px;
 }
-.aloja-trans {
-	display:inline-block;
-	align-content:center;
-	padding-left:30px;
+#fondo-azul:before {
+	content:"";
+  width: 100%;
+  height: 100%;
+  background-color: #CCC;
+  opacity:0.6;
 }
 .img-text {
 	text-align:justify;
 	display:inline-flex;
 	align-items:center;
-}
-.img-text img {
-	height:600px;
-	padding-left:20px;
+	padding: 0px 20px;
 }
 .info-porq {
 	background-color:#003d75;
@@ -212,7 +210,6 @@ p {
 .info-porq p {
 	padding:30px;
 	font-size:18px;
-	padding-top:40px;
 }
 .numero-servi p {
 	font-size:20px;
@@ -223,18 +220,6 @@ p {
 	font-size:17px;
 	color:#41B7C4;
 }
-.aseso-visa {
-	display:inline-block;
-	align-content:center;
-}
-.numero-servi {
-	text-align:left;
-	display:inline-flex;
-	padding-left:20px;
-	padding-right:10px;
-	align-content:center;
-	align-items:center;
-}
 #ventajas-estudios {
 	background-color:#FAFAFA;
 	display:flex;
@@ -242,10 +227,11 @@ p {
 	align-content:center;
 	text-align:center;
 	height:450px;
+	margin-top: -10px;
 }
 header .menu li a {
 		text-decoration:none;
-	padding:0 10px;
+	    padding: 7px 9px;
 	color:#edf0f5;
 }
 #welcome {
@@ -328,6 +314,26 @@ footer {
 	background-color:#F0F0F0;
 }
 @media(min-width:769px) {
+	.img-text img {
+	width: 35%;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px
+	}
+	.asesoria, .alojamiento, .logistica, .visa{
+		width: 50%;
+		padding-left: 10px
+	}
+	.aloja-trans, .aseso-visa  {
+	display: flex;
+	padding-left:35px;
+	}
+	.numero-servi {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
 	.sec-video-movil {
 		visibility:hidden;
 		width:100%;
@@ -335,11 +341,22 @@ footer {
 		margin-bottom:-6px;
 		height:0px;
 	}
-	.super-fondo,.wow {
+	#super-fondo  {
 		display:none;
+		visibility: hidden;
 	}
 }
 @media(max-width:768px) {
+	.img-text img {
+	width: 60%;
+	padding-bottom: 20px
+	}
+	.numero-servi {
+	 text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+	}
 	.fondo-trans img {
 		width:260px
 	}
@@ -362,13 +379,12 @@ footer {
 	}
 	#fondo-azul {
 			width:100%;
-			height:150px;
+			height:250px;
+			background-size: cover;
 	}
 	.numero-servi {
-			display:inline-block;
-		;
-			padding-top:40px;
-			padding-bottom:40px;
+		display:inline-block;
+	    padding: 40px;
 	}
 	.info-porq p {
 			padding-top:10px;
@@ -384,7 +400,7 @@ footer {
 			padding-top:20px;
 			padding-bottom:20px;
 	}
-	.aloja-trans {
+	.aloja-trans, .aseso-visa {
 			display:inline;
 			padding-left:0px;
 	}
@@ -452,10 +468,6 @@ footer {
 			display:grid;
 			justify-items:center;
 	}
-	.img-text img {
-			height:400px;
-			padding-left:0px;
-	}
 }
 .fondo-titulo {
 	display:flex;
@@ -481,8 +493,35 @@ footer {
 	height:auto;
 	margin-bottom:-10px;
 		width:100%;
+		z-index: -1;;
 }
 video {
-		width:100%;
+	width:100%;
 	opacity: 0.9;
+}
+.myButton-admision{
+	background-color:#a7b4c1;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:3px 20px;
+	text-decoration:none;
+}
+.myButton-admision:hover {
+	color: #47B7C3;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ecfff',endColorstr='#79bbff',GradientType=0);
+	background-color: #FFF;
+	text-decoration:none;
+}
+.myButton-admision:active {
+	position:relative;
+	top:1px;
+}
+.myButton-admision:active a {
+	text-decoration:none;
 }
