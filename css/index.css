@@ -61,6 +61,13 @@ nav {
 	display:flex;
 	align-items:center;
 }
+.collapse li a:hover {
+	color:#41B7C4;
+	background:white;
+	-webkit-transition:0.5s ease-in-out;
+	-o-transition:0.5s ease-in-out;
+	transition:0.5s ease-in-out;
+}
 .menu li a:hover {
 	color:#41B7C4;
 	background:white;
@@ -319,164 +326,174 @@ footer {
 	justify-content:space-between;
 	height:40px;
 	background-color:#F0F0F0;
-	padding-left: 40px;
-	padding-right: 40px;
-	align-items: center;
+	padding-left:40px;
+	padding-right:40px;
+	align-items:center;
 }
 @media(min-width:769px) {
+	.wrap-contact100 {
+		background-color:#fbfbfb;
+		margin:0px 70px;
+	}
 	.img-text img {
-		width:35%;
-		padding-top:20px;
-		padding-right:20px;
-		padding-bottom:20px
+			width:35%;
+			padding-top:20px;
+			padding-right:20px;
+			padding-bottom:20px
 	}
 	.asesoria,.alojamiento,.logistica,.visa {
-			width:50%;
-			padding-left:10px
+				width:50%;
+				padding-left:10px
 	}
 	.aloja-trans,.aseso-visa {
-		display:flex;
-		padding-left:35px;
+			display:flex;
+			padding-left:35px;
 	}
 	.numero-servi {
-		text-align:left;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
+			text-align:left;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
 	}
 	.sec-video-movil {
-			visibility:hidden;
-			width:100%;
-			opacity:0.9;
-			margin-bottom:-6px;
-			height:0px;
+				visibility:hidden;
+				width:100%;
+				opacity:0.9;
+				margin-bottom:-6px;
+				height:0px;
 	}
 	#super-fondo {
-			display:none;
-			visibility:hidden;
+				display:none;
+				visibility:hidden;
 	}
 }
 @media(max-width:768px) {
+	.wrap-contact100 {
+		background-color:#fbfbfb;
+		margin:0px 5px;
+	}
 	.img-text img {
-		width:60%;
-		padding-bottom:20px
+			width:60%;
+			padding-bottom:20px
 	}
 	.numero-servi {
-		 text-align:left;
-		display:flex;
-		align-items:center;
-		flex-direction:column;
+			 text-align:left;
+			display:flex;
+			align-items:center;
+			flex-direction:column;
 	}
 	.fondo-trans img {
-			width:260px
+				width:260px
 	}
 	.sec-video-movil {
-			visibility:visible;
-			width:100%;
-			opacity:0.9;
-			margin-bottom:-6px;
-			height:auto;
+				visibility:visible;
+				width:100%;
+				opacity:0.9;
+				margin-bottom:-6px;
+				height:auto;
 	}
 	.sec-video {
-			display:none;
+				display:none;
 	}
 		#ventajas-estudios {
-				display:block;
-				height:100%
+					display:block;
+					height:100%
 	}
 	.espacio-visa {
-				display:grid;
+					display:grid;
 	}
 	#fondo-azul {
-				width:100%;
-				height:250px;
-				background-size:cover;
+					width:100%;
+					height:250px;
+					background-size:cover;
 	}
 	.numero-servi {
-			display:inline-block;
-		 padding:40px;
+				display:inline-block;
+			 padding:40px;
 	}
 	.info-porq p {
-				padding-top:10px;
-				padding-left:10px;
-				padding-right:10px;
+					padding-top:10px;
+					padding-left:10px;
+					padding-right:10px;
 	}
 	.contacto {
-				background-color:#FAFAFA;
-				display:grid;
-				align-items:center;
-				text-align:center;
-				height:100%;
-				padding-top:20px;
-				padding-bottom:20px;
+					background-color:#FAFAFA;
+					display:grid;
+					align-items:center;
+					text-align:center;
+					height:100%;
+					padding-top:20px;
+					padding-bottom:20px;
 	}
 	.aloja-trans,.aseso-visa {
-				display:inline;
-				padding-left:0px;
+					display:inline;
+					padding-left:0px;
 	}
 	footer section {
-				display:flex;
-				justify-content:center;
+					display:flex;
+					justify-content:center;
 	}
 	footer {
-				display:block;
-				height:90px;
-				text-align:center
+					display:block;
+					height:90px;
+					text-align:center
 	}
 	#fondo {
-				justify-content:center;
-				padding-bottom:5px;
-				display:none
+					justify-content:center;
+					padding-bottom:5px;
+					display:none
 	}
 	.menu li {
-				display:block;
-				list-style:none;
+					display:block;
+					list-style:none;
 	}
 	.logos-uni {
-				display:grid;
-				align-items:center;
+					display:grid;
+					align-items:center;
 	}
 	.bg-light {
-				display:flex;
-				text-align:center;
+					display:flex;
+					text-align:center;
 	}
 	.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link {
-				color:rgba(255,255,255,0.9);
+					color:#C0C0C0;
+					font-weight:bold
 	}
 	.navbar-light .navbar-nav .nav-link {
-				color:rgba(255,255,255,0.45);
+					color:white;
+					font-size:20px;
 	}
 	.logos-uni a {
-				display:flex;
-				justify-content:center;
+					display:flex;
+					justify-content:center;
 	}
 	#contenedor {
-				width:100%;
-				height:100%;
-				margin:0 auto;
+					width:100%;
+					height:100%;
+					margin:0 auto;
 	}
 	.fondo-trans {
-				width:100%;
+					width:100%;
 	}
 	.collage {
-				width:100%;
-				height:100%;
-				background-size:cover;
-				background-position:center;
-				opacity:0.7;
+					width:100%;
+					height:100%;
+					background-size:cover;
+					background-position:center;
+					opacity:0.7;
 	}
 	#super-fondo {
-			background-image:url(../img/mochilero.png);
-			visibility:visible;
-			background-size:cover;
-			background-position:center;
-			background-attachment:initial;
-			height:600px;
+				background-image:url(../img/mochilero.png);
+				visibility:visible;
+				background-size:cover;
+				background-position:center;
+				background-attachment:initial;
+				height:600px;
 	}
 	.img-text {
-				text-align:justify;
-				display:grid;
-				justify-items:center;
+					text-align:justify;
+					display:grid;
+					justify-items:center;
 	}
 }
 .fondo-titulo {
@@ -489,7 +506,7 @@ footer {
 	margin-bottom:0px;
 	text-align:center;
 }
-.logog-titulos {
+.logo-titulos {
 	display:flex;
 	flex-direction:column;
 	padding-top:5px;
@@ -534,5 +551,228 @@ video {
 	top:1px;
 }
 .myButton-admision:active a {
-	text-decoration: none;
+	text-decoration:none;
+}
+.simplescrollup__button {
+	position:fixed;
+	bottom:3rem;
+	right:3rem;
+	transition:1s all;
+	z-index:10000;
+}
+.simplescrollup__button--show {
+	transform:translateX(0);
+}
+.simplescrollup__button--hide {
+	transform:translateX(100px);
+}
+.volverUp {
+	font-size:35px;
+}
+.modal-header-contacto {
+	background-image:url(../img/contact.jpg);
+	width:100%;
+	height:150px;
+	background-size:cover;
+	display:block;
+	align-items:center;
+}
+.modal-fondo-trans h1 {
+	color:#FFFFFF;
+	font-size:3rem;
+	padding-top:35px;
+}
+.modal-fondo-trans {
+	background-color:#00305b99;
+	width:100%;
+	height:100%;
+	justify-items:left;
+	align-content:center;
+	text-align:center
+}
+input {
+	outline:none;
+	border:none;
+}
+input[type="number"] {
+	-moz-appearance:textfield;
+	appearance:none;
+	-webkit-appearance:none;
+}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance:none;
+}
+textarea {
+	outline:none;
+	border:none;
+}
+textarea:focus,input:focus {
+	border-color:transparent !important;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+input:focus:-moz-placeholder {
+	color:transparent;
+}
+input:focus::-moz-placeholder {
+	color:transparent;
+}
+input:focus:-ms-input-placeholder {
+	color:transparent;
+}
+textarea:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+textarea:focus:-moz-placeholder {
+	color:transparent;
+}
+textarea:focus::-moz-placeholder {
+	color:transparent;
+}
+textarea:focus:-ms-input-placeholder {
+	color:transparent;
+}
+input::-webkit-input-placeholder {
+	color:#999999;
+}
+input:-moz-placeholder {
+	color:#999999;
+}
+input::-moz-placeholder {
+	color:#999999;
+}
+input:-ms-input-placeholder {
+	color:#999999;
+}
+textarea::-webkit-input-placeholder {
+	color:#999999;
+}
+textarea:-moz-placeholder {
+	color:#999999;
+}
+textarea::-moz-placeholder {
+	color:#999999;
+}
+textarea:-ms-input-placeholder {
+	color:#999999;
+}
+.modal-contact100-form {
+	width:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding: 33px 25px 27px 95px;
+}
+/*------------------------------------------------------------------[ Input ]*/
+.modal-wrap-input100 {
+	width:100%;
+	position:relative;
+	border-bottom:1px solid #b2b2b2;
+	margin-bottom:26px;
+}
+.modal-label-input100 {
+	font-family:Poppins-Regular;
+	font-size:15px;
+	color:#808080;
+	line-height:1.2;
+	text-align:right;
+	position:absolute;
+	top:14px;
+	left:-105px;
+	width: 80px;
+}
+/*---------------------------------------------*/
+.input100 {
+	font-family:Poppins-Regular;
+	font-size:15px;
+	color:#555555;
+	line-height:1.2;
+	display:block;
+	width:100%;
+	background:transparent;
+	padding:0 5px;
+}
+.focus-input100 {
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.focus-input100::before {
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:-1px;
+	left:0;
+	width:0;
+	height:1.52px;
+	-webkit-transition:all 0.6s;
+	-o-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	transition:all 0.6s;
+	background: #47B7C3;
+}
+/*---------------------------------------------*/
+input.input100 {
+	height:40px;
+}
+textarea.input100 {
+	min-height:115px;
+	padding-top:14px;
+	padding-bottom:13px;
+}
+.input100:focus+.focus-input100::before {
+	width:100%;
+}
+.has-val.input100+.focus-input100::before {
+	width:100%;
+}
+.modal-header-nosotros {
+	background-image:url(../img/nosotros-fondo.jpg);
+	width:100%;
+	height:150px;
+	background-size:cover;
+	display:block;
+	align-items:center;
+}
+element.style {
+}
+.modal.show .modal-dialog {
+	-webkit-transform:translate(0,0);
+	transform:translate(0,0);
+}
+.modal.fade .modal-dialog {
+	transition:-webkit-transform .3s ease-out;
+	transition:transform .3s ease-out;
+	transition:transform .3s ease-out,-webkit-transform .3s ease-out;
+	-webkit-transform:translate(0,-25%);
+	transform:translate(0,-25%);
+}
+@media (min-width:576px) {
+	.modal-dialog {
+		max-width:670px;
+		margin:15rem auto;
+		margin-top:5rem;
+	}
+}
+.modal-dialog {
+	position:relative;
+	width:auto;
+	pointer-events:none;
+	margin-top:14rem;
+}
+.modal-body {
+	background-color:#003D75;
+	color:white
+}
+.modal-footer {
+	background-color: #fbfbfb
 }
