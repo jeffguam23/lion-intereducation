@@ -319,6 +319,9 @@ footer {
 	justify-content:space-between;
 	height:40px;
 	background-color:#F0F0F0;
+	padding-left: 40px;
+	padding-right: 40px;
+	align-items: center;
 }
 @media(min-width:769px) {
 	.img-text img {
