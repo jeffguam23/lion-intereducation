@@ -1,4 +1,4 @@
-var scroll = new SmoothScroll('a[href*="#"]', {
+var scroll = new SmoothScroll('a[href*="#header"]', {
 	  speed: 1000,
 	  speedAsDuration: true,
     easing: 'easeInOutCubic',
