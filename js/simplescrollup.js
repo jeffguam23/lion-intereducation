@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     // Variables
-    var buttonUp = document.querySelector('a[href="#header"]');
+    var buttonUp = document.querySelector('a[href="#fondo"]');
     var easings = {
         linear(t) {
             return t;
